@@ -1,0 +1,91 @@
+.ad-section {
+  background-color: $backgroundColor;
+  height: 230vh;
+  @extend %boxPadding;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: $backgroundColor;
+    height: 515px;
+    margin: -115px -80px;
+    transform: skewY(3deg) translateY(-25%);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: $backgroundColor;
+    height: 515px;
+    margin: -115px -80px;
+    transform: skewY(-3deg) translateY(100%);
+  }
+
+  .purple-box {
+    position: absolute;
+    // display: none;
+    background-color: $primaryColor;
+    width: 68%;
+    left: 16%;
+    font: {
+      size: 40px;
+      family: $playfair;
+    }
+    line-height: 1.3;
+    text-align: center;
+    padding: 60px;
+    transform: translateY(-600px);
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 80px;
+      width: 100%;
+      background-color: $primaryColor;
+      margin: -60px;
+      transform: skewY(-4deg) translateY(65px);
+      z-index: -1;
+    }
+  }
+
+  .cross {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hexagon {
+    @extend %general;
+    left: 25%;
+    transform: translateY(40%);
+  }
+
+  .slider-1 {
+    @extend %general;
+    height: 400px;
+    width: 600px;
+    left: 40%;
+    transform: translateY(90%);
+  }
+
+  .waves {
+    @extend %general;
+    left: 79%;
+    height: 100px;
+    transform: translateY(325%);
+  }
+
+  .ad-block {
+    @extend %general;
+    width: 30%;
+    left: 15%;
+    transform: translateY(63%);
+  }
+
+  .arrow-glyph {
+    @extend %general;
+    left: 32%;
+    transform: translateY(750px);
+  }
+}

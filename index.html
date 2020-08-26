@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>King James</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/css/style.css" />
+    <style>
+      .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 2px 5px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+.sec3 {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: row;
+  height: 75vh;
+  background-color: white;
+  padding: 3rem;
+}
+.sec3 .box01 {
+  margin: auto;
+  background-image: url(img/12.\ bg-square-gradient.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 380px;
+  height: 330px;
+  padding: 1.5rem;
+}
+.sec3 .box01 .box-head {
+  color: #e01c5a;
+  font-family: "ProximaNova-L";
+}
+.sec3 .box01 .box-text {
+  color: white;
+  font-family: "PlayfairDisplay-M";
+  max-width: 90%;
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+.sec3 .box01 .sec3-R-arrow {
+  margin: auto;
+  transform: translateX(270px) translateY(70px);
+}
+.sec3 .box02 {
+  margin: auto;
+  background-image: url(img/14.\ bg-rectangle-gradient.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 380px;
+  height: 330px;
+  padding: 1.5rem;
+}
+.sec3 .box02 .box-head {
+  color: #e01c5a;
+  font-family: "ProximaNova-L";
+}
+.sec3 .box02 .box-text {
+  color: white;
+  font-family: "PlayfairDisplay-M";
+  max-width: 90%;
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+.sec3 .box02 .sec3-R-arrow {
+  margin: auto;
+  transform: translateX(270px) translateY(110px);
+}
+.sec3 .box03 {
+  margin: auto;
+  background-image: url(img/13.\ bg-circle-gradient.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 380px;
+  height: 330px;
+  padding: 1.5rem;
+}
+.sec3 .box03 .box-head {
+  color: #e01c5a;
+  font-family: "ProximaNova-L";
+}
+.sec3 .box03 .box-text {
+  color: white;
+  font-family: "PlayfairDisplay-M";
+  max-width: 90%;
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+.sec3 .box03 .sec3-R-arrow {
+  margin: auto;
+  transform: translateX(270px) translateY(110px);
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+    </style>
+  </head>
+  <body>
+
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="https://www.kingjames.co.za/about">About</a>
+      <a href="https://www.kingjames.co.za/clients">Clients</a>
+      <a href="https://www.kingjames.co.za/work">Works</a>
+      <a href="https://www.kingjames.co.za/contact">Contact</a>
+    </div>
+
+    <div class="hero">
+      <div id="main">
+        <button class="openbtn" onclick="openNav()" >☰</button>  
+      </div>
+
+      <img src="./img/2. kjd-logo.png" alt="kjd logo" class="logo" />
+      <img src="./img/3. arrow-down.png" alt="scroll" class="arrow-down" />
+    </div>
+    <div class="ad-section">
+      <p class="purple-box">
+        We offer an interconnected set of services to help our clients respond
+        to the disruptions and seize the opportunities of the digital age.
+        <br />
+        <button>
+          ABOUT US
+          <img
+            src="./img/4. arrow-right.png"
+            alt="arrow-right"
+            class="arrow-right"
+          />
+        </button>
+      </p>
+      <img src="./img/cross-glyph.png" alt="cross" class="cross" />
+      <img src="./img/5. hex-gradient.png" alt="hexagon" class="hexagon" />
+      <img src="./img/6. image-slider-1.jpg" alt="slider-1" class="slider-1" />
+      <img src="./img/7. glyph.png" alt="waves" class="waves" />
+      <div class="ad-block">
+        <h1 class="heading">Advertising communications</h1>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <button>
+          READ MORE
+          <img
+            src="./img/4. arrow-right.png"
+            alt="arrow-right"
+            class="arrow-right"
+          />
+        </button>
+      </div>
+      <img
+        src="./img/8. arrow-glyph.png"
+        alt="arrow-glyph"
+        class="arrow-glyph"
+      />
+    </div>
+    <div class="data-section">
+      <img src="./img/11. circle-gradient.png" alt="circle" class="circle" />
+      <img src="./img/9. image-slider-2.jpg" alt="slider-2" class="slider-2" />
+      <div class="data-block">
+        <h1 class="heading">Data analytics</h1>
+        <p class="paragraph data-p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <button>
+          READ MORE
+          <img
+            src="./img/4. arrow-right.png"
+            alt="arrow-right"
+            class="arrow-right"
+          />
+        </button>
+      </div>
+      <img src="./img/10. arrow-glyph-2.png" alt="arrow-2" class="arrow-2" />
+    </div>
+   <section class="sec3">
+    <div class="box01">
+      <h5 class="box-head" cl>LATEST NEWS</h5>
+      <h1 class="box-text">King James Digital win big at the 2017 Loeries</h1>
+      <img class="sec3-R-arrow" src="./img/4. arrow-right.png" />
+  </div>
+
+  <div class="box02">
+      <h5 class="box-head">LATEST WORK</h5>
+      <h1 class="box-text">Sanlam Conspicious Savers</h1>
+      <img class="sec3-R-arrow" src="./img/4. arrow-right.png" />
+  </div>
+
+  <div class="box03">
+      <h5 class="box-head">LATEST CAREERS</h5>
+      <h1 class="box-text">Front end developer Cape Town</h1>
+      <img class="sec3-R-arrow" src="./img/4. arrow-right.png" />
+  </div>
+   </section>
+    <footer class="footer">
+      <div class="foot01">
+          <h2 class="foot-head">CAPE TOWN</h2>
+          <div class="foot-email">Capetown@kingjames.digital</div>
+          <div class="foot-num">Tel: +27 21 469 1500</div>
+      </div>
+  
+      <div class="foot02">
+          <h2 class="foot-head">JOBERG</h2>
+          <div class="foot-email">Joberg@kingjames.digital</div>
+          <div class="foot-num">Tel: +27 21 469 1500</div>
+      </div>
+  
+      <div class="foot03">
+          <h2 class="foot-head">MEDIA & DATA</h2>
+          <div class="foot-email">Mediaanddata@kingjames.digital</div>
+          <div class="foot-num">Tel: +27 21 469 1500</div>
+      </div>
+  
+      <div class="foot04">
+          <h2 class="foot-head">CONNECT</h2>
+          <div class="foot-email">Twitter</div>
+          <div class="foot-num">Facebook</div>
+      </div>
+  </footer>
+  </body>
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+</html>

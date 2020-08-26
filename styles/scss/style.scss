@@ -1,0 +1,80 @@
+$montserrat: "Montserrat", sans-serif;
+$playfair: "Playfair Display", serif;
+$primaryColor: #70259b;
+$secondaryColor: #db1c5e;
+$backgroundColor: #201728;
+$textColor: #f8f8ff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+%boxPadding {
+  padding: 80px;
+}
+
+%general {
+  position: absolute;
+  z-index: 1;
+}
+
+.heading {
+  color: $textColor;
+  font: {
+    family: $playfair;
+    size: 50px;
+    weight: lighter;
+  }
+  margin: 30px 0;
+}
+
+p {
+  color: $textColor;
+}
+
+button {
+  background: transparent;
+  color: $textColor;
+  font: {
+    family: $montserrat;
+    size: 12px;
+  }
+  letter-spacing: 1px;
+  border: 2px solid $secondaryColor;
+  height: 40px;
+  width: 150px;
+  margin-top: 50px;
+  transition: 0.2s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: transform 0.2s;
+  }
+}
+
+.arrow-right {
+  position: absolute;
+  transform: translateX(10px);
+}
+
+.paragraph {
+  position: relative;
+  width: 65%;
+  font: {
+    family: $montserrat;
+    size: 12px;
+  }
+  line-height: 2;
+}
+
+@import "hero";
+@import "adSection";
+@import "dataSection";
+@import "mobile";
